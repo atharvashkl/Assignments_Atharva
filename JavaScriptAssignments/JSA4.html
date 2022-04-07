@@ -1,0 +1,76 @@
+<html lang=en>
+<html>
+<meta charset="utf-8">
+<title>
+    Hello folks
+</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        var select = window.prompt("Enter Operation 1:Sum 2:Sub 3:Mul 4:Div 5:Exp 6:Mean 7:Quit  ");
+        if (select == 1) {
+            var number1;
+            var number2;
+            number1= window.prompt("Enter number 1 : ")
+            number2 = window.prompt("Enter number 2 : ")
+            var sum =  parseInt (number1) +  parseInt (number2)
+            alert(parseInt(sum));
+        }
+        else if (select == 2) {
+            var number1 = window.prompt("Enter number 1 : ")
+            var number2 = window.prompt("Enter number 2 : ")
+            var sum = number1 - number2
+            alert(sum);
+        }
+        else if (select == 3) {
+            var number1 = window.prompt("Enter number 1 : ")
+            var number2 = window.prompt("Enter number 2 : ")
+            var sum = number1 * number2
+            alert(sum);
+        }
+        else if (select == 4) {
+            var number1 = window.prompt("Enter number 1 : ")
+            var number2 = window.prompt("Enter number 2 : ")
+            var sum = number1 / number2
+            alert(sum);
+        }
+        else if (select == 5) {
+            var number1 = window.prompt("Enter number 1 : ")
+            var number2 = window.prompt("Enter number 2 : ")
+            for(var i=1;i<=number2;i++)
+            {
+                var sum=number1*number1;
+            }
+            
+            alert(sum);
+        }
+        else if (select == 6) {
+            var number1 = window.prompt("Enter number 1 : ")
+            var number2 = window.prompt("Enter number 2 : ")
+            var sum = parseInt (number1) + parseInt (number2)
+            var mean=parseInt (sum/2)
+            alert(mean);
+        }
+        else if (select == 7)
+        {
+            alert("Session end");
+        }
+        else {
+            prompt("Wrong Input!")
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
